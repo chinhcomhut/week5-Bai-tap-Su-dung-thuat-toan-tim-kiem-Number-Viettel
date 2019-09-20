@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CHECK VIETTEL NUMBER</title>
+</head>
+<body>
+<script>
+    function ValidateViettel(str) {
+        let regexp =/^086|09[6-8]{1}|03[2-9]{1}|03966[0-9]{7}$/; //Các đầu số điện thoại Viettel hiện nay: (096 - 097 - 098) (086) (032 ... 039) (03966)//
+let checkNumberViettel = regexp.test(str);
+if(checkNumberViettel){
+    return true
+}else {
+    return false;
+}
+    }
+</script>
+</body>
+</html>
